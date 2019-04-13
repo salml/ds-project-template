@@ -1,3 +1,3 @@
 #!/bin/bash
 
-export PYTHONPATH=${PYTHONPATH}:$HOME/mdas-2019
+export PYTHONPATH=${PYTHONPATH}:$HOME/ds-project-template

@@ -1,2 +1,1 @@
-"""Sam's submodule"""
-from . import utils
+from . import module
