@@ -21,7 +21,7 @@ Startup scripts are useful for just about every project. In this example, sourci
 
 ### __init__.py Files
 
-In order for Python to recognize a folder as package, it must contain an `__init__.py` file. The import statement in an `__init__.py` file affects how the folder's modules can be imported. In this example, the `packages/__init__.py` contains the following code:
+In order for Python to recognize a folder as package, it must contain an `__init__.py` file. The import statements in an `__init__.py` file affect how modules can be imported. For example, `packages/__init__.py` contains the following code:
 ```python
 from . import module
 from . import subpackage
@@ -55,14 +55,9 @@ With these concepts, you can build a neat little Python package for your project
 ## Getting started with the repo
 Follow these steps to clone the repo and start playing with package architectures yourself:
 
-1. Clone the Github repository into your home directory. For OSX and Linux, you can get there with the following command:
-```bash
-cd ~
-```
-2. Set up package stuff (**repeat each session**)
-```bash
-source init.sh
-```
+1. Clone the Github repository into your home directory. For OSX and Linux, you can get there `cd ~`.
+2. Set up package stuff with `source init.sh` (**repeat each session**)
+
 In this example, the init script adds the location of our package to the PYTHONPATH environment variable. We need to run this code in order to import the project package into a script or notebook. 
 
 If you don't want to put this in your home directory, edit `init.sh` change the PYTHONPATH accordingly.
