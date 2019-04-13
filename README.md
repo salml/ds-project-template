@@ -60,4 +60,4 @@ Follow these steps to clone the repo and start playing with package architecture
 
 In this example, the init script adds the location of our package to the PYTHONPATH environment variable. We need to run this code in order to import the project package into a script or notebook. 
 
-If you don't want to put this in your home directory, edit `init.sh` change the PYTHONPATH accordingly.
+If you don't want to put this in your home directory, edit `init.sh` to change the PYTHONPATH accordingly.
