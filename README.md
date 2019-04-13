@@ -10,7 +10,8 @@ This repo demonstrates how I like to set up a data science project in Python. Th
 ```python
 import package
 from package import module
-import package.subpackage as sp1
+import package.subpackage as sp
+from package.subpackage import to_uppercase
 ```
 
 However, the above code won't work without a start up script and some carefully placed `__init__.py` files. 
