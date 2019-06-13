@@ -34,3 +34,4 @@ __pycache__/
 .pickle
 .env
 .venv
+*.egg-info/
