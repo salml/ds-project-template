@@ -6,7 +6,7 @@ This repo demonstrates how I like to set up a data science project in Python. Th
 - `pkg`: folder containing the project's internal package
 
 ## Environment Control
-Conda is where it's at for making sure you can replicate your environments over time and across projects. Plus, it prevents us from needing to reinstall our package everytime we want to use it. Here's how we initially created it:
+`conda` is where it's at for making sure you can replicate your environments over time and across projects. Plus, it prevents us from needing to reinstall our package everytime we want to use it. Here's how we initially created it:
 
 ```bash
 conda create env -n ds-project-template
@@ -29,3 +29,6 @@ pip install -e pkg
 ```
 
 The `-e` part of installing `fakeproj` stands for `--editable`, and it allows us to develop the package as we go. That way, when we make a change to the package, we don't have to reinstall it! You will, however, need to reimport it. 
+
+
+## Documentation
