@@ -21,10 +21,8 @@ import click
 
 @click.command()
 @click.argument('printme')
-@click.option('--test', required=True)
-def main(test, printme):
-    print(printme)
-    print(test)
+def main(printme):
+    print(dingus(printme))
 
 if __name__ == "__main__":
     main()
