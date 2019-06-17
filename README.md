@@ -12,6 +12,9 @@ This repo demonstrates how I like to set up a data science project in Python. Th
 conda create env -n ds-project-template
 conda activate ds-project-template
 conda install jupyterlab
+conda install pandas
+conda install pytest
+conda install sphinx
 pip install -e pkg
 ```
 
@@ -30,7 +33,7 @@ pip install -e pkg
 
 The `-e` part of installing `fakeproj` stands for `--editable`, and it allows us to develop the package as we go. That way, when we make a change to the package, we don't have to reinstall it! You will, however, need to reimport it. If we hadn't used the `-e` option, the package would show up explicitly when we export the environment to `env.yml`, but then we would need to reinstall it whenever we make a change.
 
-Another useful tip for working with packages alongside Jupyeter Notebooks: add the following cell magic to the first cell in the notebook so that your import statement reflect the latest changes in your code:
+Another useful tip for working with packages alongside Jupyter Notebooks: add the following cell magic to the first cell in the notebook so that your import statement reflect the latest changes in your code:
 
 ```python
 %load_ext autoreload
