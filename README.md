@@ -28,7 +28,11 @@ conda env create -f env.yml
 pip install -e pkg
 ```
 
-The `-e` part of installing `fakeproj` stands for `--editable`, and it allows us to develop the package as we go. That way, when we make a change to the package, we don't have to reinstall it! You will, however, need to reimport it. 
+The `-e` part of installing `fakeproj` stands for `--editable`, and it allows us to develop the package as we go. That way, when we make a change to the package, we don't have to reinstall it! You will, however, need to reimport it. If we hadn't used the `-e` option, the package would show up explicitly when we export the environment to `env.yml`, but then we would need to reinstall it whenever we make a change.
 
+Another useful tip for working with packages alongside Jupyeter Notebooks: add the following cell magic to the first cell in the notebook so that your import statement reflect the latest changes in your code:
 
-## Documentation
+```python
+%load_ext autoreload
+%autoreload 2
+```
